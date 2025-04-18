@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: skyboat-chatbot
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python app.py
+    envVars:
+      - key: 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
+        sync: false
